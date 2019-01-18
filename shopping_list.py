@@ -1,3 +1,5 @@
+#! /usr/bin/python3.6
+
 def add_to_list(items, your_choice, choice_count=1):
     find_result = find_in_list(items, your_choice)
     if find_result[0]:
@@ -129,9 +131,7 @@ def shopping_list():
         print("Hoora, your list are ready")
         show_shopping_list(items)
 
-
-if __name__ == "__main__":
-
+def main():
     answer = input("Are you ready to prepare your shopping list?(press y to continue)\n>")
 
     if answer.lower() != "y":
@@ -142,13 +142,5 @@ if __name__ == "__main__":
 
     shopping_list()
 
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
